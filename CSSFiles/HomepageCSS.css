@@ -1,0 +1,82 @@
+/* Ensure the nav element is a grid container with two equal columns and rows */
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  grid-template-rows: auto auto; /* 2 rows, auto height */
+  gap: 20px; /* Space between grid items */
+  padding: 20px;
+  align-items: start; /* Align to the start of the grid area */
+}
+
+/* Define the style for each grid section */
+.erp-section {
+  border: 2px solid #000; /* Border around each section */
+  border-radius: 10px; /* Rounded corners for the border */
+  padding: 20px; /* Padding inside each section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+/* Control the size and alignment of the icons */
+.erp-section img {
+  display: block; /* Remove inline-block alignments */
+  width: auto; /* Maintain aspect ratio */
+  height: 80px; /* Adjust height as necessary */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Style for the section titles */
+.erp-section h3 {
+  text-align: center; /* Ensure the text is centered */
+  width: 100%; /* Make the title take full width of its container */
+}
+/* Adjustments for responsive design */
+@media (max-width: 768px) {
+    nav {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+        gap: 20px; /* Smaller gap for smaller screens */
+        padding: 20px; /* Smaller padding for smaller screens */
+    }
+
+    .erp-section {
+        height: auto; /* Allow sections to grow with content */
+    }
+}
+
+/* Ensure the footer sticks to the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Footer content */
+/* footer {
+    margin-top: auto;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+} */
+

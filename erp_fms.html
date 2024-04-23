@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Management System - ERP Tool</title>
+    
+    <link rel="stylesheet" href="CSSFiles/externalCSSFile1.css">
+    <script src="Js\index.js" defer></script>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+<main>
+    <div class="container">
+        <div class="form-container">
+                   <img src="iconsNdimages/icon1.png" alt="Icon 1">
+                   <h2>Add New Financial Transaction</h2>
+                   <form id="form1" name="form1" method="post" action="addTransaction.php">
+                       <label for="NF_TransactionID">Transaction ID:</label>
+                       <input type="text" name="NF_TransactionID" placeholder="Max 8 digits" id="NF_TransactionID" />
+                    
+                       <label for="PurchaseHistory">Purchase History:</label>
+                       <input type="text" name="PurchaseHistory" placeholder="Item purchased" id="PurchaseHistory" />
+       
+                       <label for="Trans_FeedbackReceived">Transaction Feedback Received:</label>
+                       <input type="text" name="Trans_FeedbackReceived" placeholder="Yes/No" id="Trans_FeedbackReceived" />
+                       
+                       
+                       <label for="CustomerID">Customer ID:</label>
+                       <input type="text" name="CustomerID" placeholder="Max 8 digits" id="CustomerID" />
+       
+                       <label for="PaymentGateWayID">Payment GateWay ID:</label>
+                       <input type="text" name="PaymentGateWayID" placeholder="Max 8 digits" id="PaymentGateWayID" />
+       
+                      
+                       <div class="button-group">
+                           <input type="submit" name="addTransaction" value="Create" />
+                           <input type="reset" value="Reset" />
+                       </div>
+                   </form>       
+       </div>
+       
+       
+       <div class="center-column">
+               <div class="form-container">
+                   <img src="iconsNdimages/icon2.png" alt="Icon 2">
+                   <h2>Search Customer</h2>
+                   <form id="form2" name="form2" method="post" action="displayCustomer.php">
+                       <label for="Search_CustomerID">Customer ID:</label>
+                       <input type="text" name="Search_CustomerID" placeholder="Max 8 digits" id="Search_CustomerID" />
+       
+                       <div class="button-group">
+                           <input type="submit" name="displayCustomer" value="Search" />
+                           <input type="reset" value="Reset" />
+                       </div>
+                   </form>
+               </div>
+       
+               <div class="form-container">
+                   <img src="iconsNdimages/icon3.png" alt="Icon 3">
+                   <h2>Update Accountant Info</h2>
+                   <form id="form3" name="form3" method="post" action="updateAccountant.php">
+                       <label for="update_AccountantID">Accountant ID:</label>
+                       <input type="text" name="update_AccountantID" placeholder="Max 8 digits" id="update_AccountantID" />
+       
+                       <label for="UpdateField">Select Field to Update:</label>
+                       <select name="UpdateField" id="UpdateField">
+                           <option value="UpdateField"> -- Select Field -- </option>
+                           <option value="Name"> Name </option>
+                           <option value="Department"> Department </option>
+                           <option value="Certification"> Certification </option>
+                           <option value="ExperienceYears"> ExperienceYears </option>
+                           <option value="NoOfClientsServed"> No. Of Clients Served </option>
+                           <option value="ManagerID"> Manager ID </option>
+                           
+                           
+                       </select>
+       
+                       <label for="UpdateValue">Update Value:</label>
+                       <input type="text" name="UpdateValue" placeholder="latest value" id="UpdateValue" />
+       
+                       <div class="button-group">
+                           <input type="submit" name="updateAccountant" value="Update" />
+                           <input type="reset" value="Reset" />
+                       </div>
+                   </form>
+               </div>
+       
+               <div class="form-container">
+                   <img src="iconsNdimages/icon4.png" alt="Icon 4">
+                   <h2>Delete Transaction</h2>
+                   <form id="form4" name="form4" method="post" action="deleteTransaction.php">
+                       <label for="delete_TransactionID">Transaction ID:</label>
+                       <input type="text" name="delete_TransactionID" placeholder="Max 8 digits" id="delete_TransactionID" />
+       
+                       <div class="button-group">
+                           <input type="submit" name="deleteTransaction" value="Delete" />
+                           <input type="reset" value="Reset" />
+                       </div>
+                   </form>
+               </div>
+       
+       </div>
+       
+       
+       
+       <div class="form-container right">
+                   <img src="iconsNdimages/icon5.png" alt="Icon 5">
+                   <h2>Customer Registration</h2>
+                   <form id="form5" name="form5" method="post" action="customerRegistration.php">
+                       <label for="NCReg_CustomerID">Customer ID:</label>
+                       <input type="text" name="NCReg_CustomerID" placeholder="Max 8 digits" id="NCReg_CustomerID" />
+       
+                       <label for="Name">Name:</label>
+                       <input type="text" name="Name" placeholder="Max 50 Characters" id="FirstName" />
+       
+                       <label for="Email">Email:</label>
+                       <input type="text" name="Email" placeholder="************@*****.***" id="Email" />
+       
+                       <label for="Preferences">Preferences:</label>
+                       <input type="text" name="Preferences" placeholder="Cash/Online/Credit" id="Preferences" />
+       
+                       <label for="LoyaltyPoints">Loyalty Points:</label>
+                       <input type="text" name="LoyaltyPoints" placeholder="Max 8 digits" id="LoyaltyPoints" />
+                       
+                       <label for="FeedbackReceived">Feedback Received:</label>
+                       <input type="text" name="FeedbackReceived" placeholder="Yes/No" id="FeedbackReceived" />
+
+
+                       <div class="button-group">
+                           <input type="submit" name="customerRegistration" value="Create Customer" />
+                           <input type="reset" value="Reset" />
+                       </div>
+                   </form>      
+       
+       </div>      
+       
+    </div>
+        </main>
+     <!-- Footer -->
+    <div id="footer-placeholder"></div>
+</body>
+</html>
