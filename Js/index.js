@@ -1,6 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
   const pageTitleMap = {
+    'index.html':"ProVision Systems",
     'erp_fms.html': 'Finance Management System',
     'erp_cms.html': 'Customer Management System',
     'erp_sc.html': 'Supply Chain',
